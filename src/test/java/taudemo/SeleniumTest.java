@@ -37,6 +37,7 @@ public class SeleniumTest {
         String expectedComTitle = "Example Domain";
         driver.get("https://www.example.com");
         assertEquals(expectedComTitle, driver.getTitle());
+        System.out.println(driver.getTitle());
     }
     @Test
     public void openTheOrgPageAndCheckTheTitle() {
